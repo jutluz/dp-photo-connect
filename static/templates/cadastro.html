@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="icon" href="icon.png"/>
+        <link rel="stylesheet" href="../css/cadastro.css" type="text/css">
+        <title>Cadastro</title>
+    </head>
+
+    <body>
+
+        <div id="cadastro">
+            <form class="card" onsubmit="return false";>
+
+                <div class="card-header">
+                    <h2>Criar uma conta</h2>
+                </div>
+
+                <div class="card-content">
+                    
+                    <div class="card-content-area">
+                        <label for="usuario">Nome</label>
+                        <input type="text" id="nome" autocomplete="on">
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-content-area">
+                            <label for="usuario">Email</label>
+                            <input type="text" id="email" autocomplete="on">
+                        </div>
+                        <div class="card-content-area">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" autocomplete="off">
+                        </div>
+                </div>
+
+                <div class="card-footer">
+                    <button id="bt-enviar">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="../js/cadastro.js"></script>
+    </body>
+
+</html>
