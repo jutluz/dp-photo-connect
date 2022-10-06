@@ -2,13 +2,13 @@
     width: 40px;
     margin-right: 14px;
 }
+
 .grid-item {
     margin-bottom: 10px;
     margin-left: 45px;
-    
 }
 
-.grid{
+.grid {
     justify-content: center;
     margin-left: 65px;
 }
@@ -27,7 +27,7 @@ img{
 
 .inicio {
     color: white;
-    background: gray;    
+    background: gray;
     font-size: 16px;
     font-weight: 700;
     padding: 11px 12px 11px 12px;
@@ -36,7 +36,7 @@ img{
 
     display: flex;
     align-items: center;
-    justify-content: center;                   
+    justify-content: center;
 }
 
 .criar {
