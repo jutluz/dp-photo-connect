@@ -1,10 +1,25 @@
 from geral.config import *
 from modelo.pessoa import Pessoa
+from modelo.arquivos import Arquivos
+from flask import Flask, render_template, request, send_file
 
 #rota padrão
 @app.route("/")
 def inicio():
     return "Cadastro e login de pessoas."
+
+
+@app.route("/insere_imagem", methods = ["GET", "POST"])
+def index():
+    if request.method == 'POST':
+        file = request.files['arquivo']
+
+        arq = Arquivos(nomearq=file.filename, dados=file.read())
+        db.session.add(arq)
+        db.session.commit()
+
+        return f'Uploaded: {file.filename}'
+    return render_template('index.html')
 
 @app.route("/listar", methods = ["GET"])
 def listar():
